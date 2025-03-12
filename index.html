@@ -1,166 +1,130 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>选择语言 / Select Language</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <title>LIB 临时工作室 - 上海协作之旅</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
             background-color: #f5f5f5;
         }
 
-        .region-card {
+        .header {
+            background-color: #2c3e50;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            max-width: 300px;
+            margin: 1rem auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
             background: white;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin: 20px 0;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
         }
 
         h2 {
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            color: #3498db;
+            margin: 1.5rem 0;
         }
 
-        .language-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
         }
 
-        .language-item {
-            display: flex;
-            align-items: center;
-            padding: 12px;
-            border-radius: 6px;
-            transition: background-color 0.2s;
+        ul {
+            padding-left: 2rem;
+            margin: 1rem 0;
         }
 
-        .language-item:hover {
-            background-color: #f8f9fa;
-        }
-
-        .language-item a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #333;
-            width: 100%;
-        }
-
-        .flag-icon {
-            width: 32px;
-            height: 24px;
-            margin-right: 15px;
-            border-radius: 3px;
-        }
-
-        .disabled {
-            color: #999;
-            cursor: not-allowed;
+        .notice {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
         }
 
         footer {
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            margin-top: 40px;
-            color: #666;
-            padding: 20px;
-            border-top: 1px solid #eee;
+            padding: 1rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <div class="region-card">
-        <h2>🌏 亚洲及太平洋地区（包括大洋洲）</h2>
-        <div class="language-list">
-            <div class="language-item">
-                <a href="https://libps.github.io/zh/index">
-                    <span class="flag-icon flag-icon-cn"></span>
-                    简体中文（中国大陆）
-                </a>
-            </div>
-            <div class="language-item">
-                <a href="https://libps.github.io/zh-hkmo/index">
-                    <span class="flag-icon flag-icon-hk"></span>
-                    <span class="flag-icon flag-icon-mo"></span>
-                    繁體中文（香港澳門）
-                </a>
-            </div>
-            <div class="language-item">
-                <a href="https://libps.github.io/zh-tw/index">
-                    <span class="flag-icon flag-icon-cn"></span>
-                    繁體中文（台灣地區）
-                </a>
-            </div>
-            <div class="language-item">
-                <a href="https://libps.github.io/en-hk/index">
-                    <span class="flag-icon flag-icon-hk"></span>
-                    English (Hong Kong)
-                </a>
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-mo"></span>
-                Português (Macau)
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-jp"></span>
-                日本語（日本）
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-kr"></span>
-                한국어(대한민국)
+    <header class="header">
+        <img src="https://libps.github.io/LIBPS-logo.png" alt="LIBPS Logo" class="logo">
+        <h1>LIB临时工作室上海协作之旅</h1>
+        <p>LIB Provisional Studio Shanghai Collaboration Tour - China</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>项目概述</h2>
+            <p>根据<strong>202503/1/P/001号决议</strong>，我们将于<span class="highlight">2025年5月1日-5月3日</span>在上海市浦东新区开展艺术表演录制项目。</p>
+        </div>
+
+        <div class="card">
+            <h2>核心内容</h2>
+            <ul>
+                <li><strong>时间：</strong>2025年第二季度（5月1日-3日）</li>
+                <li><strong>地点：</strong>中国上海市浦东新区</li>
+                <li><strong>内容：</strong>多风格文化艺术表演的高质量音视频录制</li>
+                <li><strong>技术标准：</strong>采用工作室推荐设备确保制作质量</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>项目背景</h2>
+            <p>为满足特定群体对第一人称视角艺术表演的需求，艺术宣传团队特别策划本次录制项目，展现艺术的多样性。</p>
+        </div>
+
+        <div class="card">
+            <h2>参与须知</h2>
+            <div class="notice">
+                <p>⚠️ 本次活动全程自费，参与者需至少准备 <span class="highlight">1000元人民币</span></p>
+                <p>⚠️ 本邀请为自愿参与，不具强制性</p>
+                <p>⚠️ 不占用工作室公共资金</p>
             </div>
         </div>
-    </div>
 
-    <div class="region-card">
-        <h2>🌍 北美洲、南美洲和欧洲（包括非洲）</h2>
-        <div class="language-list">
-            <div class="language-item">
-                <a href="https://libps.github.io/en-us/index">
-                    <span class="flag-icon flag-icon-us"></span>
-                    American English (United States)
-                </a>
-            </div>
-            <div class="language-item">
-                <a href="https://libps.github.io/en-uk/index">
-                    <span class="flag-icon flag-icon-gb"></span>
-                    British English (United Kingdom)
-                </a>
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-fr"></span>
-                Français (France)
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-ru"></span>
-                Русский (Российская Федерация)
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-es"></span>
-                Español (España)
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-pt"></span>
-                Português (Portugal)
-            </div>
-            <div class="language-item disabled">
-                <span class="flag-icon flag-icon-br"></span>
-                Português (Brasil)
-            </div>
+        <div class="card">
+            <h2>联系方式</h2>
+            <p>项目负责人：Buck Qian</p>
+            <p>发布日期：2025年3月6日</p>
+            <p>中华人民共和国 上海市 - Shanghai City,LIB Provisional Studio</p>
         </div>
     </div>
 
     <footer>
-        <p>© 2020-2025 LIBPS. All Rights Reserved. | LIB 临时工作室版权所有</p>
-        <p>推荐使用 Chrome 或 Edge 浏览器访问本站</p>
+        <p>© 2025 LIB临时工作室 | 特殊代表大会批准文件：202503/1/P/001</p>
     </footer>
 </body>
 </html>
